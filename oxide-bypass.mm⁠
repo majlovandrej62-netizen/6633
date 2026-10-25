@@ -1,0 +1,6 @@
+#import <Foundation/Foundation.h>
+#import <mach-o/dyld.h>
+
+__attribute__((constructor)) static void init(void) {
+    NSLog(@"[c4] loaded");
+}
